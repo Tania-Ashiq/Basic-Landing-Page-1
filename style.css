@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#left {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+#lnav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 30px;
+}
+#lnavr {
+  display: flex;
+  align-items: center;
+}
+#lnavr a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+}
+#lnavr i {
+  color: royalblue;
+}
+#left #textcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+}
+#textcenter h1 {
+  font-size: 90px;
+  font-weight: 900;
+}
+#textcenter p {
+  font-size: 14px;
+  opacity: 0.6;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#textcenter a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+#right {
+  width: 60%;
+  height: 100%;
+  margin-top: 20px;
+  background-image: url(./images/download.png);
+  background-position: center;
+  background-size: cover;
+}
+#right-top {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: royalblue;
+}
+#right-bottom {
+  width: 100%;
+  height: 50%;
+  background-image: url(./images/download\ \(2\).png);
+   background-position: center;
+  background-size: cover;
+}
+
+#r-topleft {
+  width: 55%;
+  height: 100%;
+  background-image: url(./images/images\ \(2\).png);
+   background-position: center;
+  background-size: cover;
+}
+#r-topright {
+  width: 45%;
+  height: 100%;
+  background-image: url(./images/images\ \(6\).png);
+   background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+  #main #left {
+    width: 100%;
+  }
+  #main #right {
+    width: 100%;
+  }
+}
